@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: hello-world-api
+  name: hello-world-api
+  namespace: hello-world-api
+spec:
+  type: ClusterIP
+  selector:
+    app: prism
+  ports:
+    - protocol: TCP
+      port: 8082
+      targetPort: 8082

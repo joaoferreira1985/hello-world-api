@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+
+  backend:
+    build:
+      context: ./services/hello-world-api
+      dockerfile: Dockerfile
+    ports:
+      - "11011:8082"
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+
+
+
+
+

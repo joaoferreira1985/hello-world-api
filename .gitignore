@@ -1,0 +1,35 @@
+# File system
+.DS_Store
+.metadata
+
+# Build result
+/cntlm.conf
+/logs
+/node
+/node_modules
+/xml
+target
+tmp
+*.flattened-pom.xml
+
+# Development files
+.vscode
+*.code-workspace
+.idea
+/.project
+/.settings
+*.override.yml
+*.env
+*.iml
+*.log
+
+# Terraform
+## Compiled files
+*.tfstate
+*.tfstate.*.backup
+*.tfstate.backup
+## plan files
+*.plan
+## Module directory
+.terraform/
+*.terraform.lock.hcl
