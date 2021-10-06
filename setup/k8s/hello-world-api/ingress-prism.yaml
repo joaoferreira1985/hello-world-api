@@ -11,9 +11,9 @@ spec:
   tls:
     - secretName:  hello-world-api-tls-partner-api
       hosts:
-        - hello-world-api.apps-tt.com
+        - domain.com
   rules:
-    - host: hello-world-api.apps-tt.com
+    - host: domain.com
       http:
         paths:
           - path: /
